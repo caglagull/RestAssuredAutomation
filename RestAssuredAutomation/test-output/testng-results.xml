@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="17916" started-at="2019-11-16T20:27:24Z" finished-at="2019-11-16T20:27:42Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="17916" started-at="2019-11-16T20:27:24Z" finished-at="2019-11-16T20:27:42Z">
+      <class name="TC003_GET_Request">
+        <test-method status="FAIL" signature="getweatherDetails()[pri:0, instance:TC003_GET_Request@3bfdc050]" name="getweatherDetails" duration-ms="17553" started-at="2019-11-16T20:27:25Z" finished-at="2019-11-16T20:27:42Z">
+          <exception class="java.util.zip.ZipException">
+            <message>
+              <![CDATA[incorrect header check]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.util.zip.ZipException: incorrect header check
+at java.util.zip.InflaterInputStream.read(Unknown Source)
+at org.apache.http.conn.EofSensorInputStream.read(EofSensorInputStream.java:135)
+at org.apache.http.conn.EofSensorInputStream$read.call(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:116)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:144)
+at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.convertStreamToByteArray(RestAssuredResponseOptionsGroovyImpl.groovy:466)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:98)
+at org.codehaus.groovy.runtime.callsite.StaticMetaMethodSite$StaticMetaMethodSiteNoUnwrapNoCoerce.invoke(StaticMetaMethodSite.java:151)
+at org.codehaus.groovy.runtime.callsite.StaticMetaMethodSite.callStatic(StaticMetaMethodSite.java:102)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:55)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:197)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:209)
+at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.charsetToString(RestAssuredResponseOptionsGroovyImpl.groovy:518)
+at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl$charsetToString$3.callCurrent(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:157)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:169)
+at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.asString(RestAssuredResponseOptionsGroovyImpl.groovy:179)
+at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.asString(RestAssuredResponseOptionsGroovyImpl.groovy:175)
+at io.restassured.internal.RestAssuredResponseOptionsImpl.asString(RestAssuredResponseOptionsImpl.java:223)
+at TC003_GET_Request.getweatherDetails(TC003_GET_Request.java:25)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.util.zip.ZipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getweatherDetails -->
+      </class> <!-- TC003_GET_Request -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
